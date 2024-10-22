@@ -8,7 +8,6 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 	slug: "test-repo",
 	scheme: "test-repo",
 	version: "1.0.0",
-	icon: "./assets/app-icon.png",
 	ios: {
 		bundleIdentifier: "com.pvinis.test-repo",
 		config: { usesNonExemptEncryption: false },
@@ -19,6 +18,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 	userInterfaceStyle: "automatic",
 	plugins: ["expo-router"],
 	extra: {
-		eas: { projectId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" },
+		eas: {
+			projectId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+		},
 	},
 })
