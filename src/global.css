@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+	/* big areas (views, sheets) */
+	--color-background: white;
+	--color-surface: #6a0dad;
+
+	--color-opening: #f9f9f9; /* input field background */
+
+	/* smaller areas (buttons, cards) */
+	--color-primary: blue;
+	--color-secondary: green;
+
+
+	/* lines (rings, separators) */
+	--color-ring: purple; /* used for ring around input fields */
+	--color-separator: #979191;
+
+
+	/* text, icons, etc */
+	--color-on-background: black;
+	--color-on-background-low: #eee;
+	--color-on-surface: white;
+
+	--color-on-primary: white;
+	--color-on-secondary: white;
+
+	/* tbd */
+	--color-surface-not-started: #6a0dad;
+	--color-surface-in-progress: #a76acd;
+	--color-surface-done: #dcc1e9;
+	--color-accent: purple;
+	--color-destructive: red;
+	--color-on-destructive: white;
+	--color-on-accent: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: black;
+		--color-on-background: white;
+		--color-on-background-low: #111;
+		--color-primary: blue;
+		--color-on-primary: white;
+		--color-opening: #222;
+		--color-surface-not-started: green;
+		--color-surface-in-progress: yellow;
+		--color-surface-done: red;
+		--color-on-surface: white;
+	}
+}
