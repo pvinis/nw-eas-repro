@@ -9,9 +9,7 @@
 			"bun": "1.1.31",
 			"ios": { "image": "latest" },
 			"android": { "image": "latest" },
-			"autoIncrement": true,
-
-			"channel": "production"
+			"autoIncrement": true
 		},
 		"development": {
 			"extends": "production",
@@ -19,17 +17,13 @@
 			"developmentClient": true,
 			"ios": { "simulator": true },
 			"env": { "APP_VARIANT": "development" },
-			"distribution": "internal",
-
-			"channel": "development"
+			"distribution": "internal"
 		},
 		"development-device": {
 			"extends": "development",
 
 			"ios": { "simulator": false },
-			"env": { "APP_VARIANT": "development-device" },
-
-			"channel": "development-device"
+			"env": { "APP_VARIANT": "development-device" }
 		}
 	},
 	"submit": {

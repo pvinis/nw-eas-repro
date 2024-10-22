@@ -1,8 +1,6 @@
 import { ConfigContext, ExpoConfig } from "expo/config"
 import extraJson from "./extraConfig.json"
 
-
-
 export default ({ config }: ConfigContext): ExpoConfig => ({
 	...config,
 
@@ -19,10 +17,7 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
 		package: "com.pvinis.test-repo",
 	},
 	userInterfaceStyle: "automatic",
-	plugins: [
-		"expo-router",
-	],
-
+	plugins: ["expo-router"],
 	extra: {
 		eas: { projectId: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" },
 	},
