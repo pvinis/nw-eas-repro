@@ -1,5 +1,4 @@
 import { ConfigContext, ExpoConfig } from "expo/config"
-import extraJson from "./extraConfig.json"
 
 export default ({ config }: ConfigContext): ExpoConfig => ({
 	...config,
